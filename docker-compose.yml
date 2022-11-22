@@ -1,0 +1,8 @@
+services:
+  nodejs:
+    build: .
+    volumes:
+      - .:/usr/app
+    command: npm start
+    ports:
+      - "3000:3000"
